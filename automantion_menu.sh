@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Brent Shinn
 
 ## Define Colors for Text
@@ -47,7 +47,6 @@ do
 clear
 printf "${RED} BASH Menu System \n" 
 printf "${NC}  TEMPLATE Menu \n"
-gcloud info | grep project --color=auto
 echo
 printf "${RED}  Select an option:\n" 
 printf "${NC}   >>  0 ${RED} Exit \n" 
@@ -66,11 +65,11 @@ read -p "   Selection:  " answer
         ;; 
         3) function3
         ;; 
-	4) function4
+		4) function4
         ;;
-	5) function5
-	;;
-	*) ;; 
+		5) function5
+		;;
+		*) ;; 
     esac  
 done 
 exit 0
